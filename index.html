@@ -24,39 +24,31 @@
       theme: {
         extend: {
           colors: {
-            dark3: '#707070',
+            dark3:'#707070',
             dark2:'#414040',
-            brown:'#B68C5A'
+            dark4:'#A0A0A0',
+            dark6:'#E7E7E7',
+            brown:'#B68C5A',
           },
           fontFamily:{
-            'EB':'EB',
-            'Poppins': 'poppins'
+            EB:'EB',
+            Poppins:'poppins',
+          },
+          backgroundImage:{
+            banner_Bg:"url(./images/banner.png)" ,
           },
         }
       }
     }
   </script>
 </head>
-<body>
+<body class="font-Poppins">
   <header class="container mx-auto">
 <nav class="py-7">
     <div class="navbar ">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a href="">Home</a></li>
-            <li><a>Services<box-icon name='chevron-right'></box-icon></a></li>
-            <li><a>Cases<box-icon name='chevron-right'></box-icon></a></li>
-            <li><a>Blog<box-icon name='chevron-right'></box-icon></a></li>
-            <li><a>Contact Us<box-icon name='chevron-right'></box-icon></a></li>
-            </ul>
-          </div>
-          <a class="w-32 text-xl"><img src="images/logo2.png" alt=""></a>
+         
+          <a class="w-32 text-xl "><img src="images/logo2.png" alt=""></a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-dark3 ">
@@ -68,10 +60,34 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-brown text-white hover:bg-black">Free Consultation</a>
+  <a class="btn bg-brown text-white hover:bg-black hidden lg:block pt-4">Free Consultation</a>
+
+       <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+              <li><a href="">Home</a></li>
+            <li><a>Services<box-icon name='chevron-right'></box-icon></a></li>
+            <li><a>Cases<box-icon name='chevron-right'></box-icon></a></li>
+            <li><a>Blog<box-icon name='chevron-right'></box-icon></a></li>
+            <li><a>Contact Us<box-icon name='chevron-right'></box-icon></a></li>
+            </ul>
+          </div>
         </div>
       </div>
 </nav>
+<!-- Banner start  -->
+ <div class="bg-banner_Bg bg-no-repeat bg-cover text-center py-24 space-y-6">
+  <h2 class="font-EB text-2xl lg:text-7xl font-extrabold leading-9 w-7/12 mx-auto text-white">We Provide Effective Legal Solutions</h2>
+  <p class="text-dark6 w-11/12 lg:w-7/12 mx-auto ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+  <div class="flex justify-center items-center gap-3">
+    <input class="p-4  text-sm text-dark4 rounded-lg w-5/12 " type="text" name="" id="" placeholder="Search your services">
+    <a class="btn bg-brown text-white hover:bg-black border-none px-7 ">Search</a>
+  </div>
+ </div>
   </header>  
   <main>
 
